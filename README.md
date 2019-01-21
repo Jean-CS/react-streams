@@ -1,3 +1,21 @@
+This application is a basic clone of Twitch.tv, with routes, authentication and a streaming back-end.
+
+![](http://i66.tinypic.com/15z05xk.png)
+
+## Users will be able to:
+
+![](http://i65.tinypic.com/51c9hf.png)
+
+## Basic difference between Twitch and this App
+
+![](http://i64.tinypic.com/w7mu8n.png)
+
+## App Challenges
+
+![](http://i64.tinypic.com/v3ful2.png)
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
