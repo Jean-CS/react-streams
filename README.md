@@ -14,6 +14,12 @@ This application is a basic clone of Twitch.tv, with routes, authentication and 
 
 ![](http://i64.tinypic.com/v3ful2.png)
 
+## Why `react-router-dom` and not `react-router`
+
+![](http://i64.tinypic.com/29wqxf.png)
+
+`react-router` contains all common components between `react-router-dom` and `react-router-native`. So when you make a web based application, then you will only need `react-router-dom` in 99.9% of cases.
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
