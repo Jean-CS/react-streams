@@ -1,11 +1,14 @@
+/*
+    This component does not follow the Redux 'philosophy' 100%.
+    It is intentional for learning purposes.
+*/
+
 import React, { Component } from 'react'
 
 class GoogleAuth extends Component {
     state = { isSignedIn: null }
 
     componentDidMount() {
-        // developers.google.com/api-client-library/javascript/reference/referencedocs
-
         window.gapi.load('client:auth2', () => {
             window.gapi.client
                 .init({
@@ -24,11 +27,11 @@ class GoogleAuth extends Component {
         this.setState({ isSignedIn: this.auth.isSignedIn.get() })
     }
 
-    onSignIn = () => {
+    onSignInClick = () => {
         this.auth.signIn()
     }
 
-    onSignOut = () => {
+    onSignOutClick = () => {
         this.auth.signOut()
     }
 
@@ -38,7 +41,7 @@ class GoogleAuth extends Component {
         } else if (this.state.isSignedIn) {
             return (
                 <button
-                    onClick={this.onSignOut}
+                    onClick={this.onSignOutClick}
                     className='ui red google button'
                 >
                     <i className='google icon' />
@@ -48,7 +51,7 @@ class GoogleAuth extends Component {
         } else {
             return (
                 <button
-                    onClick={this.onSignIn}
+                    onClick={this.onSignInClick}
                     className='ui red google button'
                 >
                     <i className='google icon' />

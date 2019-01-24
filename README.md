@@ -26,6 +26,16 @@ This application is a basic clone of Twitch.tv, with routes, authentication and 
 
 ---
 
+## Google Authentication
+
+[Docs](developers.google.com/api-client-library/javascript/reference/referencedocs)
+
+![](http://i65.tinypic.com/fuqgt2.png)
+
+### Following Redux Conventions
+
+![](http://i68.tinypic.com/2v8pxc6.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
